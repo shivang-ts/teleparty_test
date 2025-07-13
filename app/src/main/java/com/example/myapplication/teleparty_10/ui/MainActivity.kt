@@ -40,18 +40,15 @@ class MainActivity : AppCompatActivity() {
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
 
-        // TrackSelector with default params
         trackSelector = DefaultTrackSelector(this).apply {
             setParameters(buildUponParameters().setForceHighestSupportedBitrate(false))
         }
 
-        // Initialize player
         player = ExoPlayer.Builder(this)
             .setTrackSelector(trackSelector)
             .build()
         binding.playerView.player = player
 
-        // DRM media item
         val mediaItem = MediaItem.Builder()
             .setUri(DRM_URL.toUri())
             .setDrmConfiguration(
@@ -61,7 +58,6 @@ class MainActivity : AppCompatActivity() {
             )
             .build()
 
-        // Add listener to fetch track info when available
 
         player.addListener(object : Player.Listener {
             override fun onTracksChanged(tracks: Tracks) {
@@ -69,7 +65,6 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        // Observe resolution list to populate spinner
         viewModel.resolutions.observe(this, Observer { labels ->
             binding.resolutionSpinner.visibility = View.VISIBLE
             val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, labels)
