@@ -10,23 +10,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/etEntityId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/string_enter_entity_id"
-                android:inputType="text"
-                android:layout_margin="12dp"
-                android:layout_marginBottom="8dp" />
-
-            <Button
-                android:id="@+id/btnFetch"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/string_fetch_metadata"
-                android:layout_gravity="start"
-                android:layout_margin="12dp" />
-
             <TextView
                 android:id="@+id/tvTitle"
                 android:textStyle="bold"
