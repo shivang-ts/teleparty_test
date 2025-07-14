@@ -54,6 +54,8 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.appcompat)
     testImplementation(libs.junit)
+    implementation("androidx.fragment:fragment-ktx:1.2.0")
+    implementation("com.squareup.okhttp3:okhttp:5.1.0")
     implementation("androidx.media3:media3-exoplayer:1.7.1")
     implementation("androidx.media3:media3-ui:1.7.1")
     implementation("androidx.media3:media3-exoplayer-dash:1.1.1")

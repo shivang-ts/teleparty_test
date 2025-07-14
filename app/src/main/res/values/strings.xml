@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Teleparty_1.0</string>
+    <string name="string_task1">Task 1: DRM Video Player</string>
+    <string name="string_task2">Task 2: Metadata Fetcher</string>
+    <string name="string_fetch_metadata">Fetch Metadata</string>
+    <string name="string_enter_entity_id">Enter entityId</string>
+    <string name="string_title_log">🎬 Title: %1$s</string>
+    <string name="string_series">📺 Series: %1$s</string>
+    <string name="string_season_episode">📘 Season %1$d | Episode %2$d</string>
+    <string name="string_rating">🔞 Rating: %1$s</string>
+    <string name="string_type_entity">🎞 Type: %1$s | Entity: %2$s</string>
+    <string name="string_language">🗣 Languages: %1$s</string>
 </resources>
